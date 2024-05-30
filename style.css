@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* nav start */
+nav, .section-a{
+    background-color: black;
+}
+nav a, .section-a{
+color: white !important;
+}
+nav .dropdown ul li a{
+    color: black !important;
+}
+.navbar button{
+    background-color: #000000;
+    border: none;
+}
+#nv-bn{
+    background-color: white;
+    color: #000000;
+}
+/* nav closed */
+
+/* section-a start */
+.container{
+    padding: 64px;
+    padding-inline: 64px !important;
+}
+.s-a-left{
+    width: 50%;
+}
+.s-a-right{
+    width: 50%;
+}
+.section-a .s-a-left h1{
+    font-size: 58px;
+}
+.s-a-left .ii i{
+    color: black;
+}
+.s-a-right img{
+    width: 100%;
+    height: 558px;
+}
+/* section-a closed */
+
+/* section-b start */
+.section-b .s-b-left img{
+    width: 100%;
+}
+.s-b-left{
+    width: 50%;
+}
+.section-b .s-b-right{
+    width: 459px;
+}
+.s-b-right h1{
+    color: black;
+    font-size: 58px;
+    font-weight: bold;
+}
+.s-b-right .ga a{
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    background-image: -webkit-linear-gradient(transparent calc(100% - 1px), #000000 1px), -webkit-linear-gradient(transparent calc(100% - 1px), #CBCBCB 1px);
+    color: black;
+}
+.ga a:hover{
+    border-color: black;
+    border-width: 3px;
+    background-image: linear-gradient(transparent calc(100% - 1px), #000000 1px), linear-gradient(transparent calc(100% - 1px), #CBCBCB 1px);
+
+}
+.s-b-right button{
+    margin-top: 12px;
+}
+/* section-b closed */
+
+/* c start */
+.c .s-b-right h1{
+    color: #333333;
+}
+/* c closed */
+
+/* d start */
+.d .s-b-right h1{
+    font-size: 36px;
+}
+/* d closed */
+
+/* section-c start */
+.section-c{
+    background-color: #f6f6f6;
+}
+.card .card-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+/* section-c closed */
+
+/* footer start */
+.footer{
+    color: white;
+    background-color: #000000;
+}
+.footer .container > a{
+    text-decoration: none;
+    color: white;
+    height: 112px;
+    display: flex;
+    align-items: center; 
+    justify-content: start;
+}
+.footer button{
+    background-color: #000000;
+    border: none;
+}
+.footer .gd button{
+    width: 128px;
+}
+.footer .up .card-text{
+    font-size: 12px;
+}
+.footer .up ul{
+    list-style: none;
+}
+.up ul li a{
+    color: #afafaf;
+    font-size: 12px;
+}
+.up ul li a:hover{
+    color: #4b4b4b;
+}
+
+.container .sqoa-ul{
+    padding-inline: 15px;
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 36px;
+    padding: 0;
+}
+.sqoa-ul .ul-li{
+    width: 261px;
+    height: auto;
+}
+.sqoa-ul .ul-li .ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    list-style: none;
+    gap: 16px;
+    padding: 0;
+}
+.sqoa-ul .ul-li .ul li{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.ul li:hover{
+    color: #afafaf;
+    cursor: pointer;
+}
+.ul li h3:hover{
+    color: white;
+}
+.sqoa-ul .ul-li .ul li:first-child{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 4px;
+}
+.sqoa-ul .ul-li .ul li h3{
+    height: 24px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.footer .ib .ib-left{
+    gap: 64px;
+}
+/* footer closed */
+
+
+
+/* Responsive @768px */
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        gap: 50px;
+        padding-inline: 0 !important;
+    }
+    .c .container{
+        flex-direction: column-reverse;
+    }
+    .container .s-a-left{
+        width: 100%;
+    }
+    .container .s-a-right{
+        width: 100%;
+    }
+    .container .s-b-left{
+        width: 100%;
+    }
+    .container .s-b-right{
+        width: 100%;
+    }
+    .footer .sqoa-ul{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .sqoa-ul .ul-li{
+        width: 236px;
+        height: auto;
+    }
+    .ib{
+        flex-wrap: wrap;
+    }
+    .ib .ib-left{
+        flex-wrap: wrap;
+    }
+}
